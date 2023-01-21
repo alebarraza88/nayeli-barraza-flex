@@ -97,25 +97,38 @@ textarea {
 
 /*Large Background Image*/
 html {
-    background: url(../img/infected-bkgd.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background: rgb(4, 3, 3);
     height: 100%;
+    width:100%;
 }
 
 body {
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
+    justify-content:center;
     margin: 0;
     height: 100%;
-    width: 100%;
+    max-width: 1200px;
+}
+header, footer {
+    display:flex;
+    justify-content: center;
+    color:antiquewhite;
+    background: #000;
+    height:25%;
+    width:100%;
+    
 }
 
-#content {
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,22 +141,28 @@ body {
     line-height: 1.5em;
     border-radius: 10px;
     padding: 0px 30px;
-    width: 50%;
-    height: fit-content;
+    width: 75%;
+    height: 40%;
     text-align: center;
-    
-
-
+  
 }
 
-#content p span {
+ span {
     font-family: 'Courgette', cursive;
     color: rgb(255, 255, 255);
 }
-#history {
+ #about {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 75%;
+    height:100%;
+    
+ }
+ .about1, .about2,.about3{
+    display:flex;
+    justify-content: center;
+    align-items:center;
     background: rgb(213, 230, 237);
     background:rgba(1, 204, 255, 0.709);
     color: rgb(0, 0, 0);
@@ -152,12 +171,11 @@ body {
     font-size: 1.25em;
     line-height: 1.5em;
     border-radius: 10px;
-    padding: 0px 30px;
-    width: 50%;
-    height: fit-content;
+    width: 33%;
     text-align: center;
-
+    height: 50%;
 }
+
 
 
 
