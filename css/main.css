@@ -100,19 +100,22 @@ html {
     background: rgb(4, 3, 3);
     height: 100%;
     width:100%;
+    font-size: 16px;
+    
 }
 
 body {
     height: 100%;
     display: flex;
     justify-content: center;
+    fot-size: 1em;
 }
 
 .wrapper {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
-    justify-content:center;
+    justify-content:space-around;
     margin: 0;
     height: 100%;
     max-width: 1200px;
@@ -120,6 +123,7 @@ body {
 header, footer {
     display:flex;
     justify-content: center;
+    align-items: flex-end;
     color:antiquewhite;
     background: #000;
     height:25%;
@@ -137,8 +141,8 @@ main {
     color: rgb(0, 0, 0);
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.25em;
-    line-height: 1.5em;
+    font-size: 1em;
+    line-height: .8em;
     border-radius: 10px;
     padding: 0px 30px;
     width: 75%;
@@ -153,10 +157,10 @@ main {
 }
  #about {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    width: 75%;
-    height:100%;
+    width: 85%;
+    height:30%;
     
  }
  .about1, .about2,.about3{
@@ -168,13 +172,24 @@ main {
     color: rgb(0, 0, 0);
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.25em;
-    line-height: 1.5em;
+    font-size: .5em;
+    line-height: 1em;
     border-radius: 10px;
     width: 33%;
     text-align: center;
-    height: 50%;
+    height:75%;
 }
+/***** TABLET *******/
+@media (min-width: 768px){
+    main{
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+    }
+    .about1,.about2,.about3{ 
+        font-size: 1rem;
+
+    }
+}  
 
 
 
